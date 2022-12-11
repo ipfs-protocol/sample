@@ -2,11 +2,21 @@
   "name": "express-app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
+    "start": "node ./dist/index.js",
+    "dev": "nodemon ./src/index.ts",
+    "build": "rm -rf ./dist/ && tsc -p .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "keywords": [
+    "nodejs",
+    "express",
+    "server",
+    "sequelize",
+    "mysql"
+  ],
+  "author": "nunb",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2"
